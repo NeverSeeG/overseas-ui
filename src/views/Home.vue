@@ -10,8 +10,9 @@
     name: 'Home',
     methods: {
        testAxios() {
-           axios.get('http://localhost:8686/goods/findAll').then(function(res){
-               alert(res)
+           axios.get('/api/goods/findAll').then(function(res){
+               alert(res);
+               console.log(res)
            }).catch(function(res){
                alert(res);
            })
